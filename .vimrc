@@ -274,5 +274,5 @@ nnoremap <silent> <Leader>m :CtrlPFunky <C-R><C-W><CR>
 " Dash
 " ====
 
-" Map Dash search to ,m
+" Map Dash search to ,h
 nmap <silent> <leader>h <Plug>DashSearch
