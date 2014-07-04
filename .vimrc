@@ -35,6 +35,9 @@ Plugin 'tacahiroy/ctrlp-funky'
 " Dash integration
 Plugin 'rizzatti/dash.vim'
 
+" Swift lang support
+Plugin 'toyamarinyon/vim-swift'
+
 " Vundler footer
 " ==============
 
