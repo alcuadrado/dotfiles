@@ -133,9 +133,6 @@ set scrolloff=5
 " Try to change the terminal title
 set icon title
 
-" Highlight the line that the cursor is on
-set cursorline
-
 " Console Vim: Force 256 colors
 set t_Co=256
 
@@ -144,6 +141,9 @@ set synmaxcol=500
 
 " Color the column 80
 set colorcolumn=80
+
+" Highlight current line by default
+set cursorline
 
 " Auto commands
 " =============
@@ -160,6 +160,10 @@ autocmd BufReadPost * silent! execute 'normal! g`"'
 
 " Check for file changes after 'updatetime' milliseconds of cursor hold
 autocmd CursorHold * silent! checktime
+
+" Highlight current line only on selected window
+autocmd WinEnter * set cursorline
+autocmd WinLeave * set nocursorline
 
 " Filetype commands
 " =================
