@@ -236,16 +236,6 @@ map <Down> <Nop>
 nnoremap <silent> <C-S-Right> g<C-]>
 nnoremap <silent> <C-S-Left> <C-T>
 
-" Move through windows with Alt-{Up,Right,Down,Left}
-nnoremap <silent> <A-Up> :wincmd k<CR>
-inoremap <silent> <A-Up> <C-\><C-o>:wincmd k<CR>
-nnoremap <silent> <A-Down> :wincmd j<CR>
-inoremap <silent> <A-Down> <C-\><C-o>:wincmd j<CR>
-nnoremap <silent> <A-Left> :wincmd h<CR>
-inoremap <silent> <A-Left> <C-\><C-o>:wincmd h<CR>
-nnoremap <silent> <A-Right> :wincmd l<CR>
-inoremap <silent> <A-Right> <C-\><C-o>:wincmd l<CR>
-
 " Map remove line without yanking it to Ctrl-d
 nnoremap <silent> <C-d> "_dd
 
