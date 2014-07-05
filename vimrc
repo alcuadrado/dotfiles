@@ -224,6 +224,9 @@ set omnifunc=syntaxcomplete#Complete
 " Key mappings
 " ============
 
+" Map ,, to ,
+nnoremap ,, ,
+
 " Map leader key to ,
 let mapleader = ","
 
