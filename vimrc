@@ -32,7 +32,7 @@ Plugin 'kien/ctrlp.vim'
 " Fuzzy function/method finder (,m ,M)
 Plugin 'tacahiroy/ctrlp-funky'
 
-" Dash integration
+" Dash integration - TODO: This should only be installed under OSX
 Plugin 'rizzatti/dash.vim'
 
 " Swift lang support
@@ -271,7 +271,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 " Open the CtrlP-Funky extension with the word under the cursor ([m]ethod)
 nnoremap <silent> <Leader>m :CtrlPFunky <C-R><C-W><CR>
 
-" Dash
+" Dash - TODO: This should only be done under OSX
 " ====
 
 " Map Dash search to ,h
