@@ -183,8 +183,8 @@ autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2 iskeyword+=!
 " Use tabs in makefiles
 autocmd FileType make setlocal noexpandtab
 
-" Spell check in commits, markdown and text files
-autocmd FileType gitcommit,svn,asciidoc,markdown setlocal spell
+" Spell check in commits
+autocmd FileType gitcommit setlocal spell
 
 " All autocmds should be before this
 augroup END
