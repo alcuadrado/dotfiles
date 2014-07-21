@@ -38,6 +38,9 @@ Plugin 'rizzatti/dash.vim'
 " Swift lang support
 Plugin 'toyamarinyon/vim-swift'
 
+" Tmux & vim integration
+Bundle 'christoomey/vim-tmux-navigator'
+
 " Vundler footer
 " ==============
 
