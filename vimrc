@@ -41,6 +41,9 @@ Plugin 'toyamarinyon/vim-swift'
 " Tmux & vim integration
 Bundle 'christoomey/vim-tmux-navigator'
 
+" Toogle commments plugin
+Bundle 'tomtom/tcomment_vim'
+
 " Vundler footer
 " ==============
 
