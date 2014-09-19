@@ -44,6 +44,9 @@ Bundle 'christoomey/vim-tmux-navigator'
 " Toogle commments plugin
 Bundle 'tomtom/tcomment_vim'
 
+" You Complete Me
+Bundle 'Valloric/YouCompleteMe'
+
 " Vundler footer
 " ==============
 
@@ -146,10 +149,11 @@ set t_Co=256
 set synmaxcol=500
 
 " Color the column 80
-set colorcolumn=80
+set colorcolumn=81
 
 " Highlight current line by default
 set cursorline
+hi CursorLine cterm=none ctermbg=darkgray
 
 " Auto commands
 " =============
@@ -217,15 +221,6 @@ set incsearch
 
 " Highlight things that we find with the search
 set hlsearch
-
-" Search/replace globally (on a line) by default
-set gdefault
-
-" Set flags for grep command
-set grepprg=grep\ -nH\ $*\ /dev/null
-
-" Syntax completion by highlight rules for unsupported filetypes
-set omnifunc=syntaxcomplete#Complete
 
 " Key mappings
 " ============
