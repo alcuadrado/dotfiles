@@ -18,6 +18,11 @@ $ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
 
 Launch vim and run `:PluginInstall`
 
+```
+$ cd ~/.vim/bundle/YouCompleteMe
+$ ./install.sh
+```
+
 # OS X specific dependencies
 
 Install `reattach-to-user-namespace`
