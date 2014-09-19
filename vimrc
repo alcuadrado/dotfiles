@@ -196,6 +196,9 @@ autocmd FileType make setlocal noexpandtab
 " Spell check in commits
 autocmd FileType gitcommit setlocal spell
 
+" Column at line 80 in python because 79 is the limit
+autocmd FileType python setlocal colorcolumn=80
+
 " All autocmds should be before this
 augroup END
 
