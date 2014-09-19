@@ -29,9 +29,6 @@ Plugin 'othree/html5.vim'
 " Fuzzy file finder (,o)
 Plugin 'kien/ctrlp.vim'
 
-" Fuzzy function/method finder (,m ,M)
-Plugin 'tacahiroy/ctrlp-funky'
-
 " Dash integration - TODO: This should only be installed under OSX
 Plugin 'rizzatti/dash.vim'
 
@@ -272,8 +269,7 @@ let g:ctrlp_max_height = 15
 let g:ctrlp_switch_buffer = 'et'
 let g:ctrlp_clear_cache_on_exit = 0
 
-" Open the CtrlP-Funky extension with the word under the cursor ([m]ethod)
-nnoremap <silent> <Leader>m :CtrlPFunky <C-R><C-W><CR>
+nnoremap <silent> <Leader>t :CtrlPTag<CR>
 
 " Dash - TODO: This should only be done under OSX
 " ====
