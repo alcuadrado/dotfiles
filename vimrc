@@ -44,6 +44,9 @@ Bundle 'tomtom/tcomment_vim'
 " You Complete Me
 Bundle 'Valloric/YouCompleteMe'
 
+" Golang integration
+Bundle 'fatih/vim-go'
+
 " Vundler footer
 " ==============
 
