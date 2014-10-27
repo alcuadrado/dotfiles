@@ -94,6 +94,9 @@ if has('persistent_undo')
     set undofile undodir=~/.vim/.undo//,~/tmp//,/tmp//
 endif
 
+" Ctags index directories
+set tags=.git/tags;$HOME,.svn/tags;$HOME,tags;$HOME
+
 " Input configuration
 " ===================
 
