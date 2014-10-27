@@ -208,6 +208,9 @@ autocmd FileType gitcommit setlocal spell
 " Column at line 80 in python because 79 is the limit
 autocmd FileType python setlocal colorcolumn=80
 
+" Column at line 121 in go because 120 is the limit i'm currently using
+autocmd FileType go setlocal colorcolumn=121
+
 " All autocmds should be before this
 augroup END
 
