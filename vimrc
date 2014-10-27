@@ -47,6 +47,12 @@ Bundle 'Valloric/YouCompleteMe'
 " Golang integration
 Bundle 'fatih/vim-go'
 
+" Airline
+Plugin 'bling/vim-airline'
+
+" Makes vim + tmux + iterm2 work better together
+Plugin 'sjl/vitality.vim'
+
 " Vundler footer
 " ==============
 
@@ -172,8 +178,8 @@ autocmd BufReadPost * silent! execute 'normal! g`"'
 autocmd CursorHold * silent! checktime
 
 " Highlight current line only on selected window
-autocmd WinEnter * set cursorline
-autocmd WinLeave * set nocursorline
+autocmd WinEnter,BufEnter,FocusGained * set cursorline
+autocmd WinLeave,BufLeave,FocusLost * set nocursorline
 
 " Filetype commands
 " =================
@@ -279,3 +285,16 @@ nnoremap <silent> <Leader>t :CtrlPTag<CR>
 
 " Map Dash search to ,h
 nmap <silent> <leader>h <Plug>DashSearch
+
+" Airline
+" =======
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'badwolf'
+
+" Vim tmux navigator
+" ==================
+inoremap <silent> <c-h> <Esc>:TmuxNavigateLeft<cr>
+inoremap <silent> <c-j> <Esc>:TmuxNavigateDown<cr>
+inoremap <silent> <c-k> <Esc>:TmuxNavigateUp<cr>
+inoremap <silent> <c-l> <Esc>:TmuxNavigateRight<cr>
