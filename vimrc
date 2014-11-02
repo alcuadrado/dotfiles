@@ -162,7 +162,7 @@ set colorcolumn=81
 
 " Highlight current line by default
 set cursorline
-hi CursorLine cterm=none ctermbg=darkgray
+hi CursorLine cterm=none ctermbg=235
 
 " Auto commands
 " =============
