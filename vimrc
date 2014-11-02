@@ -169,7 +169,7 @@ hi ColorColumn cterm=none ctermbg=237
 
 " Highlight current line by default
 set cursorline
-hi CursorLine cterm=none ctermbg=235
+hi CursorLine cterm=none ctermbg=236
 
 " Autocomplete menu color
 hi Pmenu ctermbg=236 ctermfg=lightgrey
