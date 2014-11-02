@@ -165,6 +165,9 @@ hi ColorColumn cterm=none ctermbg=237
 set cursorline
 hi CursorLine cterm=none ctermbg=235
 
+" Autocomplete menu color
+hi Pmenu ctermbg=236 ctermfg=lightgrey
+
 " Auto commands
 " =============
 
