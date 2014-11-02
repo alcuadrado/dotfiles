@@ -159,6 +159,7 @@ set synmaxcol=500
 
 " Color the column 80
 set colorcolumn=81
+hi ColorColumn cterm=none ctermbg=237
 
 " Highlight current line by default
 set cursorline
