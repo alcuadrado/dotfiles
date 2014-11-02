@@ -127,6 +127,12 @@ set clipboard=unnamed,unnamedplus
 " Instead of failing after a missing !, ask what to do
 set confirm
 
+" Make j, k, up and down move between screen lines instead of file lines
+nnoremap <silent> k gk
+nnoremap <silent> j gj
+inoremap <silent> <Up> <C-\><C-o>gk
+inoremap <silent> <Down> <C-\><C-o>gj
+
 " Style config
 " ============
 
