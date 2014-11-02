@@ -127,12 +127,6 @@ set clipboard=unnamed,unnamedplus
 " Instead of failing after a missing !, ask what to do
 set confirm
 
-" Make j, k, up and down move between screen lines instead of file lines
-nnoremap <silent> k gk
-nnoremap <silent> j gj
-inoremap <silent> <Up> <C-\><C-o>gk
-inoremap <silent> <Down> <C-\><C-o>gj
-
 " Style config
 " ============
 
@@ -268,12 +262,15 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
-" Move to and from tag definition with Ctrl-Shift-{Right,Left}
-nnoremap <silent> <C-S-Right> g<C-]>
-nnoremap <silent> <C-S-Left> <C-T>
+" Make j, k, up and down move between screen lines instead of file lines
+nnoremap <silent> k gk
+nnoremap <silent> j gj
+inoremap <silent> <Up> <C-\><C-o>gk
+inoremap <silent> <Down> <C-\><C-o>gj
 
 " Map remove line without yanking it to Ctrl-d
 nnoremap <silent> <C-d> "_dd
+inoremap <silent> <C-d> <C-\><C-o>"_dd
 
 " NERDTree
 " ========
