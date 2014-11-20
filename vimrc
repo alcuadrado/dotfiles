@@ -53,6 +53,10 @@ Plugin 'bling/vim-airline'
 " Makes vim + tmux + iterm2 work better together
 Plugin 'sjl/vitality.vim'
 
+" Enhanced C and C++ syntax highlight (needs some manual tweaking, see
+" comments in c.vim)
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
 " Vundler footer
 " ==============
 
