@@ -14,6 +14,8 @@ $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ git clone https://github.com/alcuadrado/dotfiles.git ~/.dotfiles
 $ ln -s ~/.dotfiles/vimrc ~/.vimrc
 $ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
+$ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
+$ ln -s ~/.dotfiles/bpython ~/.bpython
 ```
 
 Launch vim and run `:PluginInstall`
