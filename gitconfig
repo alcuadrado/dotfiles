@@ -1,0 +1,5 @@
+[user]
+	name = Patricio Palladino
+	email = email@patriciopalladino.com
+[push]
+	default = upstream

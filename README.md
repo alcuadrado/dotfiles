@@ -16,6 +16,7 @@ $ ln -s ~/.dotfiles/vimrc ~/.vimrc
 $ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
 $ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
 $ ln -s ~/.dotfiles/bpython ~/.bpython
+$ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ```
 
 Launch vim and run `:PluginInstall`
