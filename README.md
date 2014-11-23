@@ -10,10 +10,20 @@ Feel free to grab whatever you want.
 Install vim, tmux, and git and run:
 
 ```
-$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ git clone https://github.com/alcuadrado/dotfiles.git ~/.dotfiles
+
+# zsh
+$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+$ ln -s ~/.dotfiles/zshrc ~/.zshrc
+$ mkdir -p ~/.oh-my-zsh/custom/themes
+$ mkdir -p ~/.oh-my-zsh/custom/plugins
+$ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+$ ln -s ~/.dotfiles/alcuadrado.zsh-theme ~/.oh-my-zsh/custom/themes
+
+# vim
+$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ ln -s ~/.dotfiles/vimrc ~/.vimrc
-$ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
+
 $ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
 $ ln -s ~/.dotfiles/bpython ~/.bpython
 $ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
@@ -28,4 +38,4 @@ $ ./install.sh
 
 # OS X specific dependencies
 
-Install `reattach-to-user-namespace`
+Install `reattach-to-user-namespace` and `zsh-completions` via Homebrew
