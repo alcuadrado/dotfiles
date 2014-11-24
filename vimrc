@@ -57,6 +57,9 @@ Plugin 'sjl/vitality.vim'
 " comments in c.vim)
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
+" Sublime Text-like multiple cursors
+Plugin 'terryma/vim-multiple-cursors'
+
 " Vundler footer
 " ==============
 
