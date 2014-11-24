@@ -175,6 +175,9 @@ hi CursorLine cterm=none ctermbg=236
 " Autocomplete menu color
 hi Pmenu ctermbg=236 ctermfg=lightgrey
 
+" Enables extra python highlight features
+let python_highlight_all = 1
+
 " Auto commands
 " =============
 
