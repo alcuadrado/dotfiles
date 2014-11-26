@@ -193,7 +193,7 @@ autocmd!
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 " Restore cursor position to where it was before closing, or go to the start
-" ig this is a gitcommit
+" if this is a gitcommit
 autocmd BufReadPost * if &ft != 'gitcommit' | silent! execute 'normal! g`"' | silent! execute 'normal! gg0' endif
 
 " Check for file changes after 'updatetime' milliseconds of cursor hold
