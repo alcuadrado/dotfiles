@@ -223,6 +223,9 @@ autocmd FileType make setlocal noexpandtab
 " Spell check in commits
 autocmd FileType gitcommit setlocal spell
 
+" Go to the beggining of a git commit
+autocmd BufReadPost *.git/COMMIT_EDITMSG silent! 1
+
 " Column at line 80 in python because 79 is the limit
 autocmd FileType python setlocal colorcolumn=80
 
