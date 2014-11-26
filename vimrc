@@ -178,6 +178,10 @@ hi Pmenu ctermbg=236 ctermfg=lightgrey
 " Enables extra python highlight features
 let python_highlight_all = 1
 
+" Spellcheck underlines the text, doesn't highlight it
+hi clear SpellBad
+hi SpellBad cterm=underline
+
 " Auto commands
 " =============
 
