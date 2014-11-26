@@ -14,6 +14,7 @@ export EDITOR=vim
 export LANG="en_US.UTF-8"
 export PATH=$HOME/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 #AUTO_TITLE conflicts with tmux
 export DISABLE_AUTO_TITLE=true
