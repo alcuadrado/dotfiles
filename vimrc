@@ -295,6 +295,9 @@ inoremap <silent> <Down> <C-\><C-o>gj
 nnoremap <silent> <C-d> "_dd
 inoremap <silent> <C-d> <C-\><C-o>"_dd
 
+" Map Q to reformat paragraph
+nnoremap <silent> Q mmgqap`m
+
 " NERDTree
 " ========
 
