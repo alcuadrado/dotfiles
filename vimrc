@@ -267,7 +267,7 @@ set hlsearch
 " Key mappings
 " ============
 
-" Map ,, to ,
+" Map , to ,,
 nnoremap ,, ,
 
 " Map leader key to ,
