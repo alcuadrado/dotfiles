@@ -63,6 +63,9 @@ Plugin 'terryma/vim-multiple-cursors'
 " Rust FTW
 Plugin 'wting/rust.vim'
 
+" TOML syntax
+Bundle 'cespare/vim-toml'
+
 " Vundler footer
 " ==============
 
