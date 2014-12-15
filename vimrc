@@ -60,6 +60,9 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " Sublime Text-like multiple cursors
 Plugin 'terryma/vim-multiple-cursors'
 
+" Rust FTW
+Plugin 'wting/rust.vim'
+
 " Vundler footer
 " ==============
 
