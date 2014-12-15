@@ -36,16 +36,16 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'toyamarinyon/vim-swift'
 
 " Tmux & vim integration
-Bundle 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " Toogle commments plugin
-Bundle 'tomtom/tcomment_vim'
+Plugin 'tomtom/tcomment_vim'
 
 " You Complete Me
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
 " Golang integration
-Bundle 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 
 " Airline
 Plugin 'bling/vim-airline'
@@ -64,7 +64,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'wting/rust.vim'
 
 " TOML syntax
-Bundle 'cespare/vim-toml'
+Plugin 'cespare/vim-toml'
 
 " Vundler footer
 " ==============
