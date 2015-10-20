@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="../custom/themes/alcuadrado"
-plugins=(git golang brew vagrant pip zsh-syntax-highlighting)
+plugins=(git golang brew vagrant pip zsh-syntax-highlighting gradle)
 source $ZSH/oh-my-zsh.sh
 
 #autocomplete on dir path
