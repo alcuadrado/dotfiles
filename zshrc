@@ -26,10 +26,6 @@ alias aspell\-latex="aspell -l es -t -x check"
 alias tmux='TERM=xterm-256color tmux -u'
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 
-#rvm
-source /Users/pato/.rvm/scripts/rvm
-PATH=$PATH:$HOME/.rvm/bin
-
 #golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
