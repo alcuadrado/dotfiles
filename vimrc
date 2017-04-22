@@ -223,6 +223,9 @@ autocmd BufRead,BufNewFile *.md setfiletype markdown
 " Json filetype detection
 autocmd BufRead,BufNewFile *.json setfiletype javascript
 
+" Latex filetype detection
+autocmd BufRead,BufNewFile *.tex setfiletype tex
+
 " Use 2 spaces for indent in ruby, and allow ! and ? in keywords
 autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2 iskeyword+=!,?
 
