@@ -349,3 +349,6 @@ inoremap <silent> <c-h> <Esc>:TmuxNavigateLeft<cr>
 inoremap <silent> <c-j> <Esc>:TmuxNavigateDown<cr>
 inoremap <silent> <c-k> <Esc>:TmuxNavigateUp<cr>
 inoremap <silent> <c-l> <Esc>:TmuxNavigateRight<cr>
+
+" Boogie syntax
+au BufRead,BufNewFile *.bpl set filetype=boogie
