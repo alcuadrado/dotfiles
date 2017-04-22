@@ -229,6 +229,9 @@ autocmd BufRead,BufNewFile *.tex setfiletype tex
 " Use 2 spaces for indent in ruby, and allow ! and ? in keywords
 autocmd FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2 iskeyword+=!,?
 
+" Use 2 spaces for indent in js
+autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
 " Use tabs in makefiles
 autocmd FileType make setlocal noexpandtab
 
