@@ -23,7 +23,6 @@ export DISABLE_AUTO_TITLE=true
 #aliases
 alias axel='axel -a'
 alias aspell\-latex="aspell -l es -t -x check"
-alias tmux='TERM=xterm-256color tmux -u'
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 alias dc='docker-compose'
 
