@@ -71,8 +71,6 @@ fi
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-if [ -z "$TMUX" ]; then tmux; fi
-
 
 PATH="/Users/pato/perl5/bin${PATH+:}${PATH}"; export PATH;
 PERL5LIB="/Users/pato/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
@@ -102,3 +100,5 @@ source $HOME/.cargo/env
 
 # Node
 export PATH=$PATH:$(yarn global bin)
+
+if [ -z "$TMUX" ]; then exec tmux; fi
