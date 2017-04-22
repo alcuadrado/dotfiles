@@ -67,10 +67,6 @@ bindkey '^S' fzf-gitstatus-widget
 
 fi
 
-# Workaround for fzf https://github.com/junegunn/fzf/issues/201
-alias clear='clear; tmux clear-history'
-alias reset='reset; tmux clear-history'
-
 #golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
