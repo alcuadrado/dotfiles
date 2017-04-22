@@ -66,6 +66,9 @@ Plugin 'wting/rust.vim'
 " TOML syntax
 Plugin 'cespare/vim-toml'
 
+" Solidity syntax
+Plugin 'tomlion/vim-solidity'
+
 " Vundler footer
 " ==============
 
