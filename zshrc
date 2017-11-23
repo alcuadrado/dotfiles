@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="../custom/themes/alcuadrado"
-plugins=(git docker docker-compose brew zsh-syntax-highlighting yarn)
+plugins=(git docker docker-compose brew zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 #autocomplete on dir path
