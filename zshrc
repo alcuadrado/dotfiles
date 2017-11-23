@@ -3,6 +3,9 @@ ZSH_THEME="../custom/themes/alcuadrado"
 plugins=(git docker docker-compose brew zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
+# remove oh my zsh aliases
+unalias -m '*'
+
 #autocomplete on dir path
 zstyle ':completion:*' special-dirs ..
 
