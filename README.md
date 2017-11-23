@@ -7,7 +7,7 @@ Feel free to grab whatever you want.
 
 # Installation
 
-Install vim, tmux, and git and run:
+Install vim, tmux, fzf and git and run:
 
 ```
 $ git clone https://github.com/alcuadrado/dotfiles.git ~/.dotfiles
@@ -27,6 +27,12 @@ $ ln -s ~/.dotfiles/vimrc ~/.vimrc
 $ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
 $ ln -s ~/.dotfiles/bpython ~/.bpython
 $ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+```
+
+On mac finish fzf installation with:
+
+```
+$(brew --prefix)/opt/fzf/install
 ```
 
 Launch vim and run `:PluginInstall`
