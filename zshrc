@@ -65,7 +65,4 @@ man() {
 # Cargo
 source $HOME/.cargo/env
 
-# Node
-export PATH=$PATH:$(yarn global bin)
-
-if [ -z "$TMUX" ]; then exec tmux; fi
+if [ -z "$TMUX" ]; then tmux; fi
