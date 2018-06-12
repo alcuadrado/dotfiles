@@ -1,29 +1,21 @@
 [user]
 	name = Patricio Palladino
 	email = email@patriciopalladino.com
+
 [push]
 	default = upstream
-[interactive]
-	diffFilter = diff-highlight
+
 [diff]
 	compactionHeuristic = true
-[pager]
-	log = diff-so-fancy | less
-	show = diff-so-fancy | less
-	diff = diff-so-fancy | less
-[core]
-	pager = diff-so-fancy | less -RFX
+
 [color]
 	ui = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = 227
-	frag = magenta bold
-	commit = 227 bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+
+[core]
+    diffFilter = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight
+
+[core]
+   pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+
+[alias]
+    graph = log --all --graph --decorate --oneline --simplify-by-decoration
