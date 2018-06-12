@@ -41,9 +41,6 @@ Plugin 'christoomey/vim-tmux-navigator'
 " Toogle commments plugin
 Plugin 'tomtom/tcomment_vim'
 
-" You Complete Me
-Plugin 'Valloric/YouCompleteMe'
-
 " Golang integration
 Plugin 'fatih/vim-go'
 
