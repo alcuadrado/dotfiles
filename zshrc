@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="../custom/themes/alcuadrado"
-plugins=(git docker docker-compose brew zsh-syntax-highlighting)
+plugins=(git brew zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # remove oh my zsh aliases
@@ -27,7 +27,6 @@ export DISABLE_AUTO_TITLE=true
 alias axel='axel -a'
 alias aspell\-latex="aspell -l es -t -x check"
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
-alias dc='docker-compose'
 
 #FZF
 
@@ -64,5 +63,12 @@ man() {
 
 # Cargo
 source $HOME/.cargo/env
+
+#renable colors
+export CLICOLOR=1
+
+#nvm
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 if [ -z "$TMUX" ]; then tmux; fi
