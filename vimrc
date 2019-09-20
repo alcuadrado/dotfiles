@@ -29,9 +29,6 @@ Plugin 'othree/html5.vim'
 " Fuzzy file finder (,o)
 Plugin 'kien/ctrlp.vim'
 
-" Dash integration - TODO: This should only be installed under OSX
-Plugin 'rizzatti/dash.vim'
-
 " Swift lang support
 Plugin 'toyamarinyon/vim-swift'
 
@@ -46,6 +43,7 @@ Plugin 'fatih/vim-go'
 
 " Airline
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Makes vim + tmux + iterm2 work better together
 Plugin 'sjl/vitality.vim'
