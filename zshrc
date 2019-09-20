@@ -27,6 +27,8 @@ export DISABLE_AUTO_TITLE=true
 alias axel='axel -a'
 alias aspell\-latex="aspell -l es -t -x check"
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
+alias npx='npx --no-install'
+alias diff='git diff --no-index --'
 
 #FZF
 
