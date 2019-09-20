@@ -45,3 +45,9 @@ $ ./install.sh
 # OS X specific dependencies
 
 Install `zsh-completions` via Homebrew
+
+
+# Troubleshooting
+
+If vim's clipboard isn't integrated with MacOS' you are probably running the
+bundled version. Reinstall it with brew.
