@@ -44,4 +44,4 @@ $ ./install.sh
 
 # OS X specific dependencies
 
-Install `reattach-to-user-namespace` and `zsh-completions` via Homebrew
+Install `zsh-completions` via Homebrew
