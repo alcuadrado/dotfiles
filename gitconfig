@@ -19,3 +19,5 @@
 
 [alias]
     graph = log --all --graph --decorate --oneline --simplify-by-decoration
+[pager]
+	branch = false
