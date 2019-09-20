@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="../custom/themes/alcuadrado"
-plugins=(git brew zsh-syntax-highlighting)
+plugins=(git brew zsh-syntax-highlighting docker)
 source $ZSH/oh-my-zsh.sh
 
 # remove oh my zsh aliases
