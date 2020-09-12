@@ -7,26 +7,23 @@ Feel free to grab whatever you want.
 
 # Installation
 
-Install vim, tmux, fzf and git and run:
+Install vim, reattach-to-user-namespace, tmux, fzf and git and run:
 
-```
-$ git clone https://github.com/alcuadrado/dotfiles.git ~/.dotfiles
+```bash
+git clone --recurse-submodules --remote-submodules https://github.com/alcuadrado/dotfiles.git ~/.dotfiles
 
 # zsh
-$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-$ ln -s ~/.dotfiles/zshrc ~/.zshrc
-$ mkdir -p ~/.oh-my-zsh/custom/themes
-$ mkdir -p ~/.oh-my-zsh/custom/plugins
-$ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-$ ln -s ~/.dotfiles/alcuadrado.zsh-theme ~/.oh-my-zsh/custom/themes
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+ln -s ~/.dotfiles/zshrc ~/.zshrc
 
 # vim
-$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-$ ln -s ~/.dotfiles/vimrc ~/.vimrc
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ln -s ~/.dotfiles/vimrc ~/.vimrc
 
-$ ln -s ~/.dotfiles/tmux.conf ~/tmux.conf
-$ ln -s ~/.dotfiles/bpython ~/.bpython
-$ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/bpython ~/.bpython
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/alacritty.yml ~/.alacritty.yml
 ```
 
 On mac finish fzf installation with:
@@ -38,16 +35,8 @@ $(brew --prefix)/opt/fzf/install
 Launch vim and run `:PluginInstall`
 
 ```
-$ cd ~/.vim/bundle/YouCompleteMe
-$ ./install.sh
-```
 
 # OS X specific dependencies
 
 Install `zsh-completions` via Homebrew
 
-
-# Troubleshooting
-
-If vim's clipboard isn't integrated with MacOS' you are probably running the
-bundled version. Reinstall it with brew.

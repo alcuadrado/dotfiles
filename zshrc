@@ -1,5 +1,6 @@
+ZSH_CUSTOM=$HOME/.dotfiles/zsh-custom
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="../custom/themes/alcuadrado"
+ZSH_THEME="alcuadrado"
 plugins=(git brew zsh-syntax-highlighting docker)
 source $ZSH/oh-my-zsh.sh
 
@@ -27,8 +28,10 @@ export DISABLE_AUTO_TITLE=true
 alias axel='axel -a'
 alias aspell\-latex="aspell -l es -t -x check"
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
-alias npx='npx --no-install'
+#alias npx='npx --no-install'
 alias diff='git diff --no-index --'
+alias newnpm='mkdir -p "/tmp/npmproject-$(ls -1d /tmp/* | grep npmproject | wc -l | sed '"'"'s/ //g'"'"')" && cd "/tmp/npmproject-$(ls -1d /tmp/* | grep npmproject | tail -n +2 | wc -l | sed '"'"'s/ //g'"'"')" && npm init -y'
+alias issue='gh issue create'
 
 #FZF
 
@@ -66,6 +69,11 @@ man() {
 # Cargo
 source $HOME/.cargo/env
 
+export NVM_SYMLINK_CURRENT=true
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 #renable colors
 export CLICOLOR=1
 
@@ -73,4 +81,6 @@ export CLICOLOR=1
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
-if [ -z "$TMUX" ]; then tmux; fi
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
