@@ -33,9 +33,9 @@ window:
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  #padding:
-  #  x: 0
-  #  y: 0
+  padding:
+    x: 5
+    y: 3
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -216,7 +216,7 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#111111'
+    black:   '#616161'
     red:     '#ed6b60'
     green:   '#66db50'
     yellow:  '#f9d24e'
@@ -227,7 +227,7 @@ colors:
 
   # Bright colors
   bright:
-    black:   '#686868'
+    black:   '#787878'
     red:     '#ec6052'
     green:   '#75f951'
     yellow:  '#f8f050'
